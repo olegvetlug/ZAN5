@@ -8,6 +8,29 @@ public class Main {
                 int[][] twoDimArray2 = {{1,2,3},{1,1,1},{0,0,0},{2,1,0}};
 //процесс умножения матриц
                 int[][]twoDimArray3 = new int [twoDimArray1.length][twoDimArray2[0].length];
+                double [][] mat4 = {
+                        {1.0,1.0,-1.0,-1.0},
+                        {2.0,1.0,2.0,3.0},
+                        {3.0,4.0,5.0,6.0},
+                        {5.0,7.0,8.0,9.0}
+                };
+                double [][] mat3 = {
+                        {1.0,2.0,3.0},
+                        {4.0,5.0,6.0},
+                        {7.0,8.0,9.0}
+                };
+                double [][] mat2 = {
+                        {1,2},
+                        {3,4},
+                };
+                Determin dd = new Determin(mat4);
+                dd.getValue();
+                Determin aa = new Determin(mat2);
+                aa.getValue();
+                Determin bb = new Determin(mat3);
+                bb.getValue();
+
+
                 int k;
                 for (int i = 0; i<twoDimArray3[0].length; i++)
                     for (int j=0; j<twoDimArray3.length; j++)
@@ -28,10 +51,6 @@ public class Main {
                 }
             }
         }
-
-
-
-
         }
 
 
