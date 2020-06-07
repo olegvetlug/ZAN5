@@ -1,5 +1,7 @@
 package ru.synergy;
 
+import javax.security.auth.kerberos.DelegationPermission;
+
 public class TestDeterm {
     public static void main(String[] args) {
         double [][] mat4 = {
@@ -21,6 +23,8 @@ public class TestDeterm {
                 dd.getValue();
                 Determin aa = new Determin(mat2);
                 aa.getValue();
+        Determin bb = new Determin(mat3);
+        bb.getValue();
     }
 }
 //=================
