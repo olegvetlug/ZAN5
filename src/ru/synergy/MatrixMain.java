@@ -139,8 +139,8 @@ class MatrixMain {
 
     public static void main(String[] args) throws java.lang.Exception
     {
-        //int[][] A = {{-1, 1, -1}, {1, -1, 1}, {-1, 1, -1}};
-        //int[][] B = {{1, -1, 1}, {-1, 1, -1}, {1, -1, 1}};
+        int[][] Atest = {{ 1, 1, -1}, {1, 1, 1}, {-1, 1, -1}};
+        int[][] Btest = {{1, -1, 1}, {-1, 1, -1}, {1, -1, 1}};
 
         int[][] A =   {{33,34,12},
                 {33,19,10},
@@ -157,12 +157,16 @@ class MatrixMain {
 
         Matrix x = new Matrix(A);
         Matrix y = new Matrix(B);
+        Matrix x1 = new Matrix(Atest);
+        Matrix y1 = new Matrix(Btest);
         x.displayMatrix();
         y.displayMatrix();
+        x1.displayMatrix();
+        y1.displayMatrix();
 
         Matrix mM = Matrix.multiply(x, y);
-
+        Matrix mM1 = Matrix.multiply(x1, y1);
         mM.displayMatrix();
-
+        mM1.displayMatrix();
     }
 }
